@@ -8,10 +8,11 @@ export default function manifest(): MetadataRoute.Manifest {
       "Personal site of Aditya Sinha, AI, analytics and commercial strategy leader.",
     start_url: "/",
     display: "standalone",
-    background_color: "#0f172a",
+    background_color: "#f3f2f8",
     theme_color: "#6366f1",
     icons: [
-      { src: "/favicon.png", sizes: "any", type: "image/png" },
+      { src: "/favicon.png", sizes: "512x512", type: "image/png" },
+      { src: "/favicon.png", sizes: "192x192", type: "image/png" },
     ],
   };
 }
