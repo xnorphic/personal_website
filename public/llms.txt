@@ -1,0 +1,83 @@
+# Aditya Sinha — AI, Analytics & Commercial Strategy Leader
+
+> Aditya Sinha is an AI and analytics expert with 7+ years across Tier-1 finance (Goldman Sachs, J.P. Morgan) and high-growth consumer tech (Good Glamm Group, Careem). He builds applied AI, machine-learning, and pricing systems that turn data into revenue.
+
+## About
+
+Aditya Sinha is an AI, analytics, and commercial strategy leader based in New Delhi, India. He started at Goldman Sachs structuring M&A transactions and now builds the AI and commercial systems that move revenue — working at the intersection of applied AI, machine learning, pricing science, and GTM execution. He holds an MBA in Finance from NMIMS, a B.Tech in Electrical Engineering from Delhi Technological University (Delhi College of Engineering), an Artificial Intelligence Micro-Certification (AIC), and a Post Graduate Certificate in Data Science. He is open to AI, analytics, revenue-operations, and commercial-strategy leadership roles.
+
+## Current Role
+
+- **Digital Analytics Manager at Careem (Nov 2025 – Present)** — Remote, United Arab Emirates
+  - Optimizing cross-channel marketing spend via incrementality A/B tests across TikTok, Meta, and Google (potential annualized burn reduction of USD 100,000)
+  - Developing growth product strategies through competitor benchmarking and marketing analytics
+  - Leading a cross-functional team building an AI-led creative intelligence layer — automated pipelines that benchmark competitor ads and surface data insights
+
+## Work Experience
+
+- **Head of Analytics at MyGlamm · Good Glamm Group (Mar 2021 – Apr 2026)** — New Delhi, India
+  - Owned the GTM redesign delivering +15% YoY revenue growth across a 1,000Cr+ GMV D2C business
+  - Built an in-house AI-driven dynamic pricing system that cut discount dependency by 35% and expanded contribution margin (CM2) by 25%
+  - Designed ML-driven inventory placement, cutting shipment splits by 75% and saving ₹13Cr/month in logistics costs with zero added headcount
+  - Rolled out in-house AI-powered (LLM) customer service agents that lifted NPS by 14%
+  - Delivered 40+ custom dashboards across revenue, user, social, and product analytics
+  - Promoted from Business Analyst to Head of Analytics within a year
+
+- **Analyst — CIO & Treasury at J.P. Morgan (Mar 2020 – Mar 2021)** — Mumbai, India
+  - Validated risk and compliance models and assessed daily capital movements aligned with U.S. Federal Reserve policy
+  - Drafted regulatory briefings for senior leadership and streamlined documentation standards
+
+- **Investment Banking Analyst at Goldman Sachs (Apr 2019 – Feb 2020)** — Bengaluru, India
+  - Conducted sector-level investment analysis used in live deal recommendations
+  - Built commercial due-diligence frameworks and contributed to 75+ investor materials per quarter
+  - Automated data-validation workflows, cutting manual reconciliation time by ~40%
+
+## Key Skills
+
+- AI & Machine Learning: Applied AI, Machine Learning, LLM Applications, Generative AI, AI-Driven Pricing, Data Science
+- Analytics: SQL, Python, Tableau, Looker, BigQuery
+- Commercial & Growth: GTM Strategy, Pricing Strategy, Commercial Planning, Revenue Operations, Product Analysis, Performance Marketing
+- Finance: Financial Modeling, Valuation, Due Diligence, M&A, Regulatory Compliance
+
+## Certifications
+
+- Artificial Intelligence Micro-Certification (AIC)™
+- Post Graduate Certificate in Data Science
+- Product Launches Micro-Certification (PRLC)
+- Strategy Consulting Bootcamp
+- Certificate Program in International Business Environment
+
+## Education
+
+- MBA, Finance — SVKM's Narsee Monjee Institute of Management Studies (NMIMS), 2017–2019
+- B.Tech, Electrical Engineering — Delhi Technological University (Delhi College of Engineering), 2012–2016
+
+## Featured AI & Analytics Projects
+
+- AI-Driven Dynamic Pricing Engine — in-house pricing system; -35% discount dependency, +25% CM2
+- ML-Driven Inventory Placement — -75% shipment splits, ₹13Cr/month savings
+- In-House LLM Customer Support Agents — +14% NPS with generative-AI agents
+- AI Creative Intelligence Layer — automated AI pipelines benchmarking competitor ads
+- Marketing Incrementality Testing — USD 100K+ potential annual marketing burn reduction
+- Executive Analytics & KPI Suite — 40+ dashboards as a single source of truth
+
+## Writing
+
+- How AI-Driven Dynamic Pricing Cut Discount Dependency by 35% — /blog/ai-driven-dynamic-pricing
+- Using Machine Learning to Cut Logistics Costs by ₹13 Crore a Month — /blog/machine-learning-supply-chain
+- Deploying In-House LLM Agents for Customer Support — /blog/llm-customer-support-agents
+
+## Contact
+
+- Email: work.adityasinha@gmail.com
+- LinkedIn: https://www.linkedin.com/in/adityasinha26
+- Website: https://www.adityasinha.xyz
+- Location: New Delhi, India (available for remote & hybrid roles worldwide)
+
+## Pages
+
+- / — Home: hero, experience, AI & analytics projects, skills, writing, and contact
+- /resume — Detailed resume with work-experience timeline and education
+- /projects — AI, machine-learning, and analytics project portfolio
+- /contact — Contact details
+- /blog — Articles on AI, machine learning, and analytics
