@@ -18,7 +18,7 @@ type ApiStatus = {
 const GREETING: Message = {
   role: "assistant",
   content:
-    "Hi! I'm Aditya's assistant — part FAQ bot, part career hype man, fully grounded in his actual resume. Pick a tab below or just ask.",
+    "Hey — I'm Aditya. Ask me about my work, projects, or how I actually operate. Pick a tab below or just type.",
 };
 
 const TEASER_DISMISSED_KEY = "chatbot-teaser-dismissed";
@@ -127,7 +127,7 @@ export default function Chatbot() {
       const data = await res.json();
       const reply =
         data?.reply ||
-        "Sorry, something went wrong. You can reach Aditya at work.adityasinha@gmail.com.";
+        "Sorry, something broke. Email me at work.adityasinha@gmail.com.";
       setMessages((prev) => [...prev, { role: "assistant", content: reply }]);
     } catch {
       setMessages((prev) => [
@@ -135,7 +135,7 @@ export default function Chatbot() {
         {
           role: "assistant",
           content:
-            "I'm having trouble connecting right now. You can reach Aditya at work.adityasinha@gmail.com or on LinkedIn.",
+            "Connection's off on my end. Email me at work.adityasinha@gmail.com or find me on LinkedIn.",
         },
       ]);
     } finally {
@@ -191,8 +191,8 @@ export default function Chatbot() {
 
           <div className="chatbot-header-top">
             <div>
-              <h3>Ask about Aditya</h3>
-              <p>Experience, projects &amp; contact</p>
+              <h3>Chat with Aditya</h3>
+              <p>First-person answers · resume-grounded</p>
             </div>
             <div className={`chatbot-status chatbot-status--${statusClass}`}>
               <span className="chatbot-status-dot" aria-hidden="true" />
