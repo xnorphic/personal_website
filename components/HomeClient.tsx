@@ -241,13 +241,13 @@ export default function HomeClient() {
             </span>
           </h1>
           <p className="text-xl sm:text-2xl text-gray-700 dark:text-slate-300 font-medium mb-6 animate-slide-up animation-delay-100">
-            AI, Analytics &amp; Commercial Strategy Leader
+            Revenue &amp; Commercial Leader · GTM · Pricing · RevOps
           </p>
           <p className="max-w-2xl mx-auto text-gray-600 dark:text-slate-400 leading-relaxed mb-10 animate-slide-up animation-delay-200">
-            Aditya Sinha is an AI and analytics expert with 7+ years across
-            Goldman Sachs, J.P. Morgan, Good Glamm Group, and Careem — building
-            applied AI, machine-learning, and pricing systems that turn data
-            into revenue.
+            Aditya Sinha builds the commercial systems that move revenue — 7 years
+            across Goldman Sachs, J.P. Morgan, Good Glamm Group, and Careem,
+            including +15% YoY growth, ₹13Cr/month logistics savings, and
+            in-house AI pricing and LLM support systems.
           </p>
           <div className="flex flex-wrap justify-center gap-2 mb-12 animate-slide-up animation-delay-300">
             {HERO_TAGS.map((t) => (

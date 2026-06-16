@@ -69,9 +69,19 @@ export const FALLBACK_QA: QA[] = [
       "Aditya is currently a Digital Analytics Manager at Careem (Nov 2025–Present), driving marketing efficiency via incrementality A/B tests across TikTok, Meta, and Google, and leading an AI-led creative intelligence layer that benchmarks competitor ads.",
   },
   {
-    keywords: ["myglamm", "good glamm", "head of analytics", "d2c"],
+    keywords: ["myglamm", "good glamm", "head of analytics", "d2c", "glamm"],
     answer:
-      "At MyGlamm · Good Glamm Group (Mar 2021–Apr 2026), Aditya was Head of Analytics for a 1,000Cr+ GMV D2C business: +15% YoY revenue, an in-house dynamic pricing system (-35% discount dependency, +25% CM2), ML inventory placement saving ₹13Cr/month, and LLM support agents that lifted NPS 14%.",
+      "At MyGlamm · Good Glamm Group, Aditya was Head of Analytics (Feb 2022–Apr 2026) for a PE-backed 1,000Cr+ GMV D2C roll-up: +15% YoY revenue, in-house dynamic pricing (-35% discount dependency, +25% CM2), ML inventory placement saving ₹13Cr/month, and LLM support agents that lifted NPS 14%. He was promoted from Business Analyst in less than a year.",
+  },
+  {
+    keywords: ["business analyst", "growth team", "mis"],
+    answer:
+      "As Business Analyst at Good Glamm Group (Mar 2021–Feb 2022), Aditya built in-house dynamic MIS for pricing and discounting, supported due diligence and integration for acquisitions, and worked on 10+ acquisitions with 800Cr+ combined deal value alongside VC/PE teams.",
+  },
+  {
+    keywords: ["acquisition", "acquisitions", "m&a", "due diligence", "800"],
+    answer:
+      "At Good Glamm Group, Aditya supported 10+ acquisitions with 800Cr+ combined deal value — deal structuring, due diligence, and integration — alongside VC/PE teams during his Growth team role.",
   },
   {
     keywords: ["jpmorgan", "j.p. morgan", "jp morgan", "treasury"],

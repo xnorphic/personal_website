@@ -4,9 +4,13 @@
 export const SITE = {
   name: "Aditya Sinha",
   url: "https://www.adityasinha.xyz",
-  title: "Aditya Sinha — AI, Analytics & Commercial Strategy Leader",
+  title:
+    "Aditya Sinha — Revenue & Commercial Leader | GTM, Pricing & AI Analytics",
+  jobTitle: "Revenue & Commercial Leader",
+  linkedinHeadline:
+    "Revenue & Commercial Leader | GTM Strategy · Pricing · RevOps | Ex-Goldman Sachs · JP Morgan | 13Cr/mo Savings · +15% Revenue Growth | NMIMS, DTU",
   description:
-    "Aditya Sinha is an AI and analytics expert with 7+ years across Tier-1 finance (Goldman Sachs, J.P. Morgan) and high-growth consumer tech (Good Glamm Group, Careem). He builds applied AI, machine-learning, and pricing systems that turn data into revenue.",
+    "Aditya Sinha is a revenue and commercial leader with 7 years across Goldman Sachs, J.P. Morgan, Good Glamm Group, and Careem. He builds GTM, pricing, and AI-led systems that move revenue — including +15% YoY growth, ₹13Cr/month logistics savings, and 35% lower discount dependency. MBA (NMIMS), B.Tech (DTU). Based in New Delhi.",
   email: "work.adityasinha@gmail.com",
   phone: "+91-9711776696",
   linkedin: "https://www.linkedin.com/in/adityasinha26",
@@ -67,13 +71,13 @@ export const EXPERIENCE: Experience[] = [
     ],
   },
   {
-    id: "myglamm",
+    id: "myglamm-head",
     title: "Head of Analytics",
     company: "MyGlamm · Good Glamm Group",
-    period: "Mar 2021 – Apr 2026",
+    period: "Feb 2022 – Apr 2026",
     location: "New Delhi, India",
     summary:
-      "Owned the GTM and analytics charter for a 1,000Cr+ GMV D2C group — pairing pricing science and machine learning to grow revenue and expand margin. Promoted from Business Analyst to Head of Analytics within a year.",
+      "Owned GTM and analytics for a PE-backed D2C roll-up that scaled to 1,000Cr+ GMV (Accel, Prosus, Warburg Pincus). Promoted from Business Analyst in less than a year. Role concluded following the company's strategic wind-down.",
     tags: [
       "Applied AI",
       "Machine Learning",
@@ -87,7 +91,7 @@ export const EXPERIENCE: Experience[] = [
         heading: "Revenue Growth & AI-Driven Pricing",
         points: [
           "Owned the GTM redesign that delivered +15% YoY top-line revenue growth across a 1,000Cr+ GMV D2C business, leading pricing experiments, funnel optimization, and upsell/cross-sell strategy end to end.",
-          "Designed and deployed a dynamic pricing system — built in-house, no third-party vendor — that cut discount dependency by 35% and expanded contribution margin (CM2) by 25% without trading off volume.",
+          "Designed and deployed a dynamic pricing system — built in-house, no third-party vendor — that cut discount dependency by 35% and expanded contribution margin (CM2) by 25% via SKU repricing and assortment restructuring.",
         ],
       },
       {
@@ -96,6 +100,28 @@ export const EXPERIENCE: Experience[] = [
           "Redesigned multi-warehouse inventory placement with ML-driven guardrails, cutting shipment splits 75% and saving ₹13Cr/month in logistics costs with zero additional headcount.",
           "Rolled out in-house AI-powered customer service agents that lifted NPS by 14% while improving service turnaround.",
           "Delivered 40+ custom dashboards across revenue, user, social, and product analytics, giving leadership real-time visibility.",
+          "Led a team of data analysts across revenue, user, social media, and product analytics.",
+        ],
+      },
+    ],
+  },
+  {
+    id: "myglamm-ba",
+    title: "Business Analyst",
+    company: "MyGlamm · Good Glamm Group",
+    period: "Mar 2021 – Feb 2022",
+    location: "New Delhi, India",
+    summary:
+      "Member of the Growth team on a PE-backed D2C roll-up — building in-house MIS, supporting acquisitions, and commercial ventures.",
+    tags: ["Growth", "Analytics", "M&A", "D2C"],
+    details: [
+      {
+        heading: "Growth & Commercial Analytics",
+        points: [
+          "Built an in-house dynamic MIS to monitor daily data and optimize pricing, discounting, and order gamification to maximize GMV and post-discount revenues.",
+          "Supported due diligence for acquisitions, integration of new brands, and development of cross-platform synergies.",
+          "Supported 10+ acquisitions (800Cr+ deal value) alongside VC/PE teams — deal structuring, due diligence, and integration.",
+          "Handled multiple assignments for in-house and external commercial ventures.",
         ],
       },
     ],
@@ -125,9 +151,9 @@ export const EXPERIENCE: Experience[] = [
     title: "Investment Banking Analyst",
     company: "Goldman Sachs",
     period: "Apr 2019 – Feb 2020",
-    location: "Bengaluru, India",
+    location: "Bengaluru, India / New York",
     summary:
-      "Supported live M&A and capital-markets mandates with investment analysis, commercial due diligence, and client materials across sectors.",
+      "Supported live M&A and capital-markets mandates with sector-level investment analysis, commercial due diligence, and client materials.",
     tags: ["Finance", "Valuation", "M&A", "Investment Banking"],
     details: [
       {
@@ -278,6 +304,7 @@ export const SKILLS: SkillGroup[] = [
       "PG Certificate in Data Science",
       "Product Launches (PRLC)",
       "Strategy Consulting Bootcamp",
+      "Certificate Program in International Business Environment",
     ],
   },
 ];
@@ -375,6 +402,80 @@ We reframed inventory placement as a machine-learning problem. The model learned
 Two things. First, the model was trained on the messy reality of demand rather than a tidy set of rules. Second — and this matters more than people admit — the ML output was constrained by operational guardrails, so the warehouse teams trusted it and acted on it.
 
 AI projects in operations fail when the model is technically impressive but operationally ignored. The savings here came from making machine learning *boringly executable*.`,
+  },
+  {
+    slug: "incrementality-testing-marketing-spend",
+    title:
+      "Finding USD 100K in Marketing Waste with Incrementality Testing",
+    date: "2026-05-10",
+    summary:
+      "How incrementality A/B tests across TikTok, Meta, and Google at Careem surfaced potential annualized marketing burn reduction of USD 100,000.",
+    tags: ["Analytics", "A/B Testing", "Marketing", "Growth"],
+    author: "Aditya Sinha",
+    content: `Marketing teams often optimize to last-click metrics. That tells you what happened, not what would have happened anyway. Incrementality testing closes that gap — and at Careem it pointed to real savings.
+
+## The problem
+
+Cross-channel spend was growing across TikTok, Meta, and Google. Each platform reported conversions. The question was not whether ads drove *some* activity, but how much *incremental* lift each channel actually contributed.
+
+## What we ran
+
+Incrementality A/B tests designed to isolate true marketing lift — holding out control groups where appropriate and measuring incremental conversions rather than attributed ones.
+
+## The finding
+
+The work identified a **potential annualized burn reduction of USD 100,000** — spend that was not delivering incremental return at the margin.
+
+## Why it matters
+
+Incrementality is unglamorous compared to creative optimization, but it is where analytics pays for itself fastest. You do not need a bigger budget; you need to know which parts of the budget are doing work.`,
+  },
+  {
+    slug: "acquisition-diligence-d2c-roll-up",
+    title:
+      "Supporting 10+ Acquisitions in a PE-Backed D2C Roll-Up",
+    date: "2026-01-18",
+    summary:
+      "What due diligence and integration work looked like across 10+ acquisitions with 800Cr+ combined deal value at Good Glamm Group.",
+    tags: ["M&A", "Due Diligence", "D2C", "Analytics"],
+    author: "Aditya Sinha",
+    content: `Good Glamm Group was a PE-backed D2C roll-up that scaled to 1,000Cr+ GMV, backed by investors including Accel, Prosus, and Warburg Pincus. Growth was not only organic — it came through acquisitions.
+
+## The analytics role in M&A
+
+As a Business Analyst on the Growth team (Mar 2021 – Feb 2022), I worked alongside VC/PE teams on deal work: structuring, due diligence, and post-close integration. Across that period we supported **10+ acquisitions with 800Cr+ in combined deal value**.
+
+## What that actually involved
+
+- **Due diligence** on target brands — revenue quality, discount dependency, funnel health.
+- **Integration planning** — connecting new brands into shared MIS, pricing, and analytics infrastructure.
+- **Cross-platform synergies** — identifying where acquired catalogues could lift GMV and post-discount revenue across the group.
+
+## The lesson
+
+M&A in consumer is often sold on brand; it is won or lost on data. The deals that integrated cleanly were the ones where analytics showed up before the term sheet, not after.`,
+  },
+  {
+    slug: "goldman-sachs-ma-to-revenue-analytics",
+    title: "From Goldman Sachs M&A to Revenue Analytics Leadership",
+    date: "2025-11-08",
+    summary:
+      "How investment banking analysis at Goldman Sachs — 75+ investor materials per quarter and automated deal reporting — shaped a career in GTM, pricing, and applied AI.",
+    tags: ["Career", "M&A", "Analytics", "Finance"],
+    author: "Aditya Sinha",
+    content: `I started at Goldman Sachs as an Investment Banking Analyst (Apr 2019 – Feb 2020), working across Bengaluru and New York on live M&A and capital-markets mandates.
+
+## What IB taught me about commercial work
+
+- **Sector-level investment analysis** used directly in live deal recommendations across Goldman's IB coverage.
+- **Commercial due diligence frameworks** and contribution to **75+ investor materials per quarter** across M&A, fundraising, and strategic advisory.
+- **Automated data-validation workflows** across deal reporting that cut manual reconciliation time by **~40%**.
+
+## The through-line
+
+The skill was never "banking" for its own sake. It was rigorous commercial analysis under time pressure — the same muscle applied later to pricing experiments, GTM redesign, and ML guardrails at a 1,000Cr+ GMV D2C business.
+
+Data is the weapon, not the job title. The transition from Goldman and J.P. Morgan to Good Glamm and Careem was a shift in industry, not in what the work required: make commercial decisions faster and better than the competition.`,
   },
 ];
 

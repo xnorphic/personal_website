@@ -3,10 +3,14 @@ import PageShell from "@/components/PageShell";
 import { PROJECTS } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Projects",
+  title: "Projects — AI, ML & Analytics Portfolio",
   description:
-    "AI, machine-learning, and analytics project portfolio by Aditya Sinha — applied work that shipped to production and moved revenue.",
+    "Production AI and analytics projects by Aditya Sinha: dynamic pricing (-35% discount dependency), ML inventory placement (₹13Cr/month savings), LLM support agents (+14% NPS), incrementality testing, and executive dashboards.",
   alternates: { canonical: "/projects" },
+  openGraph: {
+    title: "AI & Analytics Projects — Aditya Sinha",
+    url: "/projects",
+  },
 };
 
 export default function ProjectsPage() {

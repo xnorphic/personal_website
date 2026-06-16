@@ -21,7 +21,6 @@ const GREETING: Message = {
     "Hi! I'm Aditya's assistant — part FAQ bot, part career hype man, fully grounded in his actual resume. Pick a tab below or just ask.",
 };
 
-const AUTO_OPEN_KEY = "chatbot-auto-opened";
 const TEASER_DISMISSED_KEY = "chatbot-teaser-dismissed";
 
 function renderContent(text: string) {
@@ -58,7 +57,6 @@ export default function Chatbot() {
   );
   const messagesRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
-  const scrollMilestones = useRef(new Set<number>());
 
   const fetchStatus = useCallback(async () => {
     try {
@@ -97,26 +95,6 @@ export default function Chatbot() {
     if (sessionStorage.getItem(TEASER_DISMISSED_KEY)) return;
     const timer = setTimeout(() => setTeaserVisible(true), 2200);
     return () => clearTimeout(timer);
-  }, []);
-
-  // Auto-expand after 2–3 viewport scrolls
-  useEffect(() => {
-    if (sessionStorage.getItem(AUTO_OPEN_KEY)) return;
-
-    const onScroll = () => {
-      const milestone = Math.floor(window.scrollY / window.innerHeight);
-      if (milestone <= 0) return;
-
-      scrollMilestones.current.add(milestone);
-      if (scrollMilestones.current.size >= 2) {
-        setOpen(true);
-        setTeaserVisible(false);
-        sessionStorage.setItem(AUTO_OPEN_KEY, "1");
-      }
-    };
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   function dismissTeaser() {

@@ -1,43 +1,44 @@
-# Aditya Sinha — AI, Analytics & Commercial Strategy Leader
+# Aditya Sinha — Revenue & Commercial Leader | GTM, Pricing & AI Analytics
 
-> Aditya Sinha is an AI and analytics expert with 7+ years across Tier-1 finance (Goldman Sachs, J.P. Morgan) and high-growth consumer tech (Good Glamm Group, Careem). He builds applied AI, machine-learning, and pricing systems that turn data into revenue.
+> Aditya Sinha is a revenue and commercial leader with 7 years across Goldman Sachs, J.P. Morgan, Good Glamm Group, and Careem. LinkedIn: https://www.linkedin.com/in/adityasinha26
 
 ## About
 
-Aditya Sinha is an AI, analytics, and commercial strategy leader based in New Delhi, India. He started at Goldman Sachs structuring M&A transactions and now builds the AI and commercial systems that move revenue — working at the intersection of applied AI, machine learning, pricing science, and GTM execution. He holds an MBA in Finance from NMIMS, a B.Tech in Electrical Engineering from Delhi Technological University (Delhi College of Engineering), an Artificial Intelligence Micro-Certification (AIC), and a Post Graduate Certificate in Data Science. He is open to AI, analytics, revenue-operations, and commercial-strategy leadership roles.
+Aditya Sinha is based in New Delhi, India. He started at Goldman Sachs on M&A transactions and now builds GTM, pricing, and AI-led commercial systems. MBA in Finance from NMIMS (2017–2019), B.Tech in Electrical Engineering from Delhi Technological University / Delhi College of Engineering (2012–2016). Honors: National Talent Search Examination (NTSE).
+
+LinkedIn headline: Revenue & Commercial Leader | GTM Strategy · Pricing · RevOps | Ex-Goldman Sachs · JP Morgan | 13Cr/mo Savings · +15% Revenue Growth | NMIMS, DTU
 
 ## Current Role
 
-- **Digital Analytics Manager at Careem (Nov 2025 – Present)** — Remote, United Arab Emirates
-  - Optimizing cross-channel marketing spend via incrementality A/B tests across TikTok, Meta, and Google (potential annualized burn reduction of USD 100,000)
-  - Developing growth product strategies through competitor benchmarking and marketing analytics
-  - Leading a cross-functional team building an AI-led creative intelligence layer — automated pipelines that benchmark competitor ads and surface data insights
+- **Digital Analytics Manager at Careem (Nov 2025 – Present)** — United Arab Emirates
+  - Incrementality A/B tests across TikTok, Meta, and Google with potential annualized burn reduction of USD 100,000
+  - Growth product strategies via competitor benchmarking and marketing analytics
+  - AI-led creative intelligence layer roadmap for competitor ads benchmarking
 
 ## Work Experience
 
-- **Head of Analytics at MyGlamm · Good Glamm Group (Mar 2021 – Apr 2026)** — New Delhi, India
-  - Owned the GTM redesign delivering +15% YoY revenue growth across a 1,000Cr+ GMV D2C business
-  - Built an in-house AI-driven dynamic pricing system that cut discount dependency by 35% and expanded contribution margin (CM2) by 25%
-  - Designed ML-driven inventory placement, cutting shipment splits by 75% and saving ₹13Cr/month in logistics costs with zero added headcount
-  - Rolled out in-house AI-powered (LLM) customer service agents that lifted NPS by 14%
-  - Delivered 40+ custom dashboards across revenue, user, social, and product analytics
-  - Promoted from Business Analyst to Head of Analytics within a year
+- **Head of Analytics at MyGlamm · Good Glamm Group (Feb 2022 – Apr 2026)** — New Delhi, India
+  - PE-backed D2C roll-up scaled to 1,000Cr+ GMV (Accel, Prosus, Warburg Pincus)
+  - +15% YoY revenue growth via GTM redesign, pricing experiments, funnel optimization
+  - In-house dynamic pricing: -35% discount dependency, +25% CM2 expansion
+  - ML inventory placement: -75% shipment splits, ₹13Cr/month logistics savings, zero added headcount
+  - In-house LLM customer support agents: +14% NPS
+  - 40+ custom dashboards for leadership
+  - Promoted from Business Analyst in less than a year
+
+- **Business Analyst at MyGlamm · Good Glamm Group (Mar 2021 – Feb 2022)** — New Delhi, India
+  - In-house dynamic MIS for pricing, discounting, and GMV optimization
+  - Supported 10+ acquisitions (800Cr+ deal value) with VC/PE teams
+  - Due diligence, brand integration, cross-platform synergies
 
 - **Analyst — CIO & Treasury at J.P. Morgan (Mar 2020 – Mar 2021)** — Mumbai, India
-  - Validated risk and compliance models and assessed daily capital movements aligned with U.S. Federal Reserve policy
-  - Drafted regulatory briefings for senior leadership and streamlined documentation standards
 
-- **Investment Banking Analyst at Goldman Sachs (Apr 2019 – Feb 2020)** — Bengaluru, India
-  - Conducted sector-level investment analysis used in live deal recommendations
-  - Built commercial due-diligence frameworks and contributed to 75+ investor materials per quarter
-  - Automated data-validation workflows, cutting manual reconciliation time by ~40%
+- **Investment Banking Analyst at Goldman Sachs (Apr 2019 – Feb 2020)** — Bengaluru / New York
+  - 75+ investor materials per quarter; automated deal reporting (~40% faster reconciliation)
 
 ## Key Skills
 
-- AI & Machine Learning: Applied AI, Machine Learning, LLM Applications, Generative AI, AI-Driven Pricing, Data Science
-- Analytics: SQL, Python, Tableau, Looker, BigQuery
-- Commercial & Growth: GTM Strategy, Pricing Strategy, Commercial Planning, Revenue Operations, Product Analysis, Performance Marketing
-- Finance: Financial Modeling, Valuation, Due Diligence, M&A, Regulatory Compliance
+Pricing Strategy, Commercial Planning, Product Analysis, Applied AI, Machine Learning, LLM Applications, SQL, Python, GTM Strategy, Revenue Operations, Financial Modeling, M&A, Due Diligence
 
 ## Certifications
 
@@ -47,37 +48,36 @@ Aditya Sinha is an AI, analytics, and commercial strategy leader based in New De
 - Strategy Consulting Bootcamp
 - Certificate Program in International Business Environment
 
-## Education
+## Featured Projects
 
-- MBA, Finance — SVKM's Narsee Monjee Institute of Management Studies (NMIMS), 2017–2019
-- B.Tech, Electrical Engineering — Delhi Technological University (Delhi College of Engineering), 2012–2016
-
-## Featured AI & Analytics Projects
-
-- AI-Driven Dynamic Pricing Engine — in-house pricing system; -35% discount dependency, +25% CM2
+- AI-Driven Dynamic Pricing Engine — -35% discount dependency, +25% CM2
 - ML-Driven Inventory Placement — -75% shipment splits, ₹13Cr/month savings
-- In-House LLM Customer Support Agents — +14% NPS with generative-AI agents
-- AI Creative Intelligence Layer — automated AI pipelines benchmarking competitor ads
-- Marketing Incrementality Testing — USD 100K+ potential annual marketing burn reduction
-- Executive Analytics & KPI Suite — 40+ dashboards as a single source of truth
+- In-House LLM Customer Support Agents — +14% NPS
+- AI Creative Intelligence Layer — Careem competitor ad benchmarking
+- Marketing Incrementality Testing — USD 100K potential annual savings
+- Executive Analytics & KPI Suite — 40+ dashboards
 
-## Writing
+## Writing (Blog)
 
-- How AI-Driven Dynamic Pricing Cut Discount Dependency by 35% — /blog/ai-driven-dynamic-pricing
-- Using Machine Learning to Cut Logistics Costs by ₹13 Crore a Month — /blog/machine-learning-supply-chain
-- Deploying In-House LLM Agents for Customer Support — /blog/llm-customer-support-agents
+- /blog/ai-driven-dynamic-pricing
+- /blog/machine-learning-supply-chain
+- /blog/llm-customer-support-agents
+- /blog/incrementality-testing-marketing-spend
+- /blog/acquisition-diligence-d2c-roll-up
+- /blog/goldman-sachs-ma-to-revenue-analytics
 
 ## Contact
 
 - Email: work.adityasinha@gmail.com
 - LinkedIn: https://www.linkedin.com/in/adityasinha26
+- Phone: +91-9711776696
 - Website: https://www.adityasinha.xyz
-- Location: New Delhi, India (available for remote & hybrid roles worldwide)
+- CV: https://www.adityasinha.xyz/aditya-cv.pdf
 
 ## Pages
 
-- / — Home: hero, experience, AI & analytics projects, skills, writing, and contact
-- /resume — Detailed resume with work-experience timeline and education
-- /projects — AI, machine-learning, and analytics project portfolio
+- / — Home
+- /resume — Resume and education
+- /projects — Project portfolio
+- /blog — Articles
 - /contact — Contact details
-- /blog — Articles on AI, machine learning, and analytics

@@ -5,10 +5,16 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { EXPERIENCE, EDUCATION, SITE } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Resume",
+  title: "Resume — Work Experience & Education",
   description:
-    "Detailed resume of Aditya Sinha — AI, analytics and commercial strategy leader. Work experience across Careem, Good Glamm Group, J.P. Morgan, and Goldman Sachs, plus education.",
+    "Resume of Aditya Sinha: Digital Analytics Manager at Careem, Head of Analytics at Good Glamm Group, J.P. Morgan, Goldman Sachs. MBA (NMIMS), B.Tech (DTU). Download CV.",
   alternates: { canonical: "/resume" },
+  openGraph: {
+    title: "Aditya Sinha — Resume",
+    description:
+      "7 years across Goldman Sachs, J.P. Morgan, Good Glamm Group, and Careem. GTM, pricing, applied AI, and revenue analytics.",
+    url: "/resume",
+  },
 };
 
 export default function ResumePage() {

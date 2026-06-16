@@ -3,10 +3,14 @@ import PageShell from "@/components/PageShell";
 import { SITE } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contact Aditya Sinha",
   description:
-    "Get in touch with Aditya Sinha — AI, analytics and commercial strategy leader. Email, LinkedIn, and phone.",
+    "Contact Aditya Sinha for revenue operations, commercial strategy, GTM, and pricing leadership roles. Email work.adityasinha@gmail.com · LinkedIn linkedin.com/in/adityasinha26 · New Delhi, India.",
   alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact — Aditya Sinha",
+    url: "/contact",
+  },
 };
 
 export default function ContactPage() {

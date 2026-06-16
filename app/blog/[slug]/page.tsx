@@ -21,7 +21,8 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.summary,
-    authors: [{ name: post.author }],
+    authors: [{ name: post.author, url: SITE.url }],
+    keywords: post.tags,
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
       type: "article",
@@ -29,7 +30,17 @@ export async function generateMetadata({
       description: post.summary,
       url,
       publishedTime: post.date,
+      modifiedTime: post.date,
       authors: [post.author],
+      tags: post.tags,
+      locale: "en_IN",
+      images: [{ url: SITE.headshot, alt: post.author }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.summary,
+      images: [SITE.headshot],
     },
   };
 }
@@ -51,10 +62,25 @@ export default async function BlogPostPage({
     headline: post.title,
     description: post.summary,
     datePublished: post.date,
-    author: { "@type": "Person", name: post.author, url: SITE.url },
+    dateModified: post.date,
+    author: {
+      "@type": "Person",
+      name: post.author,
+      url: SITE.url,
+      sameAs: SITE.linkedin,
+    },
     keywords: post.tags.join(", "),
-    mainEntityOfPage: `${SITE.url}/blog/${post.slug}`,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE.url}/blog/${post.slug}`,
+    },
     image: `${SITE.url}${SITE.headshot}`,
+    publisher: {
+      "@type": "Person",
+      name: post.author,
+      url: SITE.url,
+    },
+    inLanguage: "en-IN",
   };
 
   return (
