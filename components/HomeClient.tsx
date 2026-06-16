@@ -8,7 +8,8 @@ import {
   EXPERIENCE,
   PROJECTS,
   SKILLS,
-  BLOG_POSTS,
+  getAcademicPosts,
+  getWritingPosts,
   SITE,
   type Experience,
   type Accent,
@@ -453,7 +454,11 @@ export default function HomeClient() {
             </div>
           </ScrollReveal>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            {BLOG_POSTS.map((post, i) => (
+            {getWritingPosts()
+              .slice()
+              .sort((a, b) => (a.date < b.date ? 1 : -1))
+              .slice(0, 3)
+              .map((post, i) => (
               <ScrollReveal key={post.slug} delay={i * 80}>
                 <Link
                   href={`/blog/${post.slug}`}
@@ -474,6 +479,64 @@ export default function HomeClient() {
                 </Link>
               </ScrollReveal>
             ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link
+              href="/blog#writing"
+              className="text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:underline"
+            >
+              View all articles →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ACADEMIC PROJECTS */}
+      <section id="academic-projects" className="py-24 px-4 sm:px-6 bg-gray-50/80 dark:bg-slate-900/40">
+        <div className="max-w-4xl mx-auto">
+          <ScrollReveal>
+            <div className="mb-12 text-center">
+              <span className="text-sm font-semibold text-pink-600 dark:text-pink-400 uppercase tracking-widest">
+                Academic Projects
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mt-2">
+                Product Case Studies
+              </h2>
+              <p className="text-slate-600 dark:text-slate-400 mt-3">
+                Structured PM case studies — JTBD, RICE, and first-principles
+                frameworks applied to retention, growth, and adoption problems.
+              </p>
+            </div>
+          </ScrollReveal>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {getAcademicPosts().map((post, i) => (
+              <ScrollReveal key={post.slug} delay={i * 80}>
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="block h-full rounded-2xl border border-gray-200 dark:border-slate-700/60 bg-white/80 dark:bg-slate-800/50 backdrop-blur-sm p-6 hover:border-indigo-500/60 transition-colors shadow-sm dark:shadow-none"
+                >
+                  {post.subcategory && (
+                    <p className="text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 mb-2">
+                      {post.subcategory}
+                    </p>
+                  )}
+                  <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">
+                    {post.title.replace(/ Case Study:.*$/, "")}
+                  </h3>
+                  <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                    {post.summary}
+                  </p>
+                </Link>
+              </ScrollReveal>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link
+              href="/blog#academic-projects"
+              className="text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:underline"
+            >
+              Read full case studies →
+            </Link>
           </div>
         </div>
       </section>

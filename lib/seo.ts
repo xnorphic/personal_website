@@ -23,6 +23,15 @@ export const SEO_KEYWORDS = [
   "Delhi Technological University",
   "New Delhi",
   "LinkedIn adityasinha26",
+  "Product Management Case Study",
+  "JTBD Framework",
+  "RICE Prioritization",
+  "KUKU TV",
+  "Zomato product strategy",
+  "Amazon bundle UX",
+  "CampEdge",
+  "User adoption strategy",
+  "Retention and growth",
 ] as const;
 
 export function buildPersonJsonLd() {
@@ -147,15 +156,47 @@ export function blogIndexJsonLd() {
     "@type": "Blog",
     "@id": `${SITE.url}/blog#blog`,
     url: `${SITE.url}/blog`,
-    name: `${SITE.name} — Writing on AI & Analytics`,
+    name: `${SITE.name} — Writing on AI, Analytics & Product Case Studies`,
     description:
-      "Articles by Aditya Sinha on AI, machine learning, pricing, and commercial analytics.",
+      "Articles by Aditya Sinha on AI, machine learning, pricing, commercial analytics, and academic product management case studies.",
     author: { "@id": `${SITE.url}/#person` },
     blogPost: BLOG_POSTS.map((p) => ({
       "@type": "BlogPosting",
       headline: p.title,
       url: `${SITE.url}/blog/${p.slug}`,
       datePublished: p.date,
+      keywords: p.tags.join(", "),
+      ...(p.section === "academic"
+        ? { articleSection: "Academic Projects", about: p.subcategory }
+        : {}),
+    })),
+  };
+}
+
+export function articleBreadcrumbJsonLd(post: {
+  title: string;
+  slug: string;
+  section?: string;
+}) {
+  const items = [
+    { name: "Home", url: SITE.url },
+    { name: "Blog", url: `${SITE.url}/blog` },
+  ];
+  if (post.section === "academic") {
+    items.push({
+      name: "Academic Projects",
+      url: `${SITE.url}/blog#academic-projects`,
+    });
+  }
+  items.push({ name: post.title, url: `${SITE.url}/blog/${post.slug}` });
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.name,
+      item: item.url,
     })),
   };
 }

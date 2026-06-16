@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { marked } from "marked";
 import PageShell from "@/components/PageShell";
 import { BLOG_POSTS, getPost, SITE } from "@/lib/content";
+import { articleBreadcrumbJsonLd } from "@/lib/seo";
 
 export function generateStaticParams() {
   return BLOG_POSTS.map((p) => ({ slug: p.slug }));
@@ -18,6 +19,7 @@ export async function generateMetadata({
   const post = getPost(slug);
   if (!post) return {};
   const url = `${SITE.url}/blog/${post.slug}`;
+  const isAcademic = post.section === "academic";
   return {
     title: post.title,
     description: post.summary,
@@ -26,7 +28,7 @@ export async function generateMetadata({
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
       type: "article",
-      title: `${post.title} — Aditya Sinha`,
+      title: `${post.title} — Aditya Sinha${isAcademic ? " | Product Case Study" : ""}`,
       description: post.summary,
       url,
       publishedTime: post.date,
@@ -34,6 +36,7 @@ export async function generateMetadata({
       authors: [post.author],
       tags: post.tags,
       locale: "en_IN",
+      section: isAcademic ? "Academic Projects" : "Professional Writing",
       images: [{ url: SITE.headshot, alt: post.author }],
     },
     twitter: {
@@ -70,6 +73,8 @@ export default async function BlogPostPage({
       sameAs: SITE.linkedin,
     },
     keywords: post.tags.join(", "),
+    articleSection: post.section === "academic" ? "Academic Projects" : "Professional Writing",
+    ...(post.subcategory ? { about: post.subcategory } : {}),
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `${SITE.url}/blog/${post.slug}`,
@@ -83,11 +88,17 @@ export default async function BlogPostPage({
     inLanguage: "en-IN",
   };
 
+  const breadcrumbLd = articleBreadcrumbJsonLd(post);
+
   return (
     <PageShell>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
       <div className="max-w-3xl mx-auto px-4 py-12">
         <Link
@@ -111,6 +122,12 @@ export default async function BlogPostPage({
         </Link>
         <article>
           <header className="mb-8">
+            {post.section === "academic" && (
+              <p className="text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 mb-2">
+                Academic Project
+                {post.subcategory ? ` · ${post.subcategory}` : ""}
+              </p>
+            )}
             <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
             <div className="flex items-center gap-3 text-gray-500 dark:text-gray-400 mb-4">
               <time>

@@ -1,6 +1,8 @@
 // Central content module — single source of truth for the whole site.
 // Mirrors the original adityasinha.xyz content.
 
+import { ACADEMIC_PROJECTS } from "./academic-projects";
+
 export const SITE = {
   name: "Aditya Sinha",
   url: "https://www.adityasinha.xyz",
@@ -317,9 +319,12 @@ export type BlogPost = {
   tags: string[];
   author: string;
   content: string;
+  /** "academic" = product case study; default = professional writing */
+  section?: "academic" | "writing";
+  subcategory?: string;
 };
 
-export const BLOG_POSTS: BlogPost[] = [
+export const WRITING_POSTS: BlogPost[] = [
   {
     slug: "ai-driven-dynamic-pricing",
     title: "How AI-Driven Dynamic Pricing Cut Discount Dependency by 35%",
@@ -478,6 +483,17 @@ The skill was never "banking" for its own sake. It was rigorous commercial analy
 Data is the weapon, not the job title. The transition from Goldman and J.P. Morgan to Good Glamm and Careem was a shift in industry, not in what the work required: make commercial decisions faster and better than the competition.`,
   },
 ];
+
+/** Professional writing + academic case studies (single blog index). */
+export const BLOG_POSTS: BlogPost[] = [...WRITING_POSTS, ...ACADEMIC_PROJECTS];
+
+export function getWritingPosts(): BlogPost[] {
+  return WRITING_POSTS;
+}
+
+export function getAcademicPosts(): BlogPost[] {
+  return ACADEMIC_PROJECTS;
+}
 
 export function getPost(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);
